@@ -1,0 +1,13 @@
+spring:
+    application:
+        name: fcat-center
+
+server:
+    port: 8961
+
+eureka:
+    client:
+        registerWithEureka: false
+        fetchRegistry: false
+        serviceUrl:
+          defaultZone: http://localhost:${server.port}/eureka/
